@@ -7,16 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeController: BaseViewController {
 
     @IBOutlet weak var imgLogo: UIImageView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+    override func setupDefaultAppearance() {
         imgLogo.layer.cornerRadius = imgLogo.bounds.height / 2
     }
-
-
 }
 

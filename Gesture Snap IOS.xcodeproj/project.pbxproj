@@ -18,6 +18,9 @@
 		8478B4D12EB0C82200E8D64E /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8478B4CE2EB0C82200E8D64E /* Poppins-Regular.ttf */; };
 		8478B4D22EB0C82200E8D64E /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8478B4CF2EB0C82200E8D64E /* Poppins-Medium.ttf */; };
 		8478B4D32EB0C82200E8D64E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8478B4D02EB0C82200E8D64E /* Poppins-SemiBold.ttf */; };
+		84A2B6892EB1A96D00C052A2 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2B6882EB1A96D00C052A2 /* SplashController.swift */; };
+		84A2B68B2EB1AA1A00C052A2 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2B68A2EB1AA1A00C052A2 /* FontExtension.swift */; };
+		84A2B68E2EB1AF9E00C052A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2B68D2EB1AF9E00C052A2 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		8478B4CE2EB0C82200E8D64E /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		8478B4CF2EB0C82200E8D64E /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		8478B4D02EB0C82200E8D64E /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		84A2B6882EB1A96D00C052A2 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		84A2B68A2EB1AA1A00C052A2 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		84A2B68D2EB1AF9E00C052A2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +72,8 @@
 		84271EE32EB074B900EF8DEB /* Gesture Snap */ = {
 			isa = PBXGroup;
 			children = (
-				845890832EB0A608009228B3 /* AppDelegate.swift */,
-				845890842EB0A608009228B3 /* Info.plist */,
-				845890822EB0A608009228B3 /* SceneDelegate.swift */,
+				84A2B68F2EB1AFAA00C052A2 /* App */,
+				84A2B68C2EB1AF9100C052A2 /* Core */,
 				8458908A2EB0A774009228B3 /* Resources */,
 				845890892EB0A761009228B3 /* Utilities */,
 				8458907E2EB0A2AC009228B3 /* Features */,
@@ -98,6 +103,7 @@
 		845890892EB0A761009228B3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				84A2B68A2EB1AA1A00C052A2 /* FontExtension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -116,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				8458908C2EB0B4A1009228B3 /* Splash.storyboard */,
+				84A2B6882EB1A96D00C052A2 /* SplashController.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -129,6 +136,24 @@
 				8478B4CC2EB0C6F700E8D64E /* Poppins-Bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		84A2B68C2EB1AF9100C052A2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				84A2B68D2EB1AF9E00C052A2 /* BaseViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		84A2B68F2EB1AFAA00C052A2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				845890832EB0A608009228B3 /* AppDelegate.swift */,
+				845890842EB0A608009228B3 /* Info.plist */,
+				845890822EB0A608009228B3 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A2B68B2EB1AA1A00C052A2 /* FontExtension.swift in Sources */,
+				84A2B6892EB1A96D00C052A2 /* SplashController.swift in Sources */,
 				845890862EB0A608009228B3 /* AppDelegate.swift in Sources */,
 				84271EE92EB074B900EF8DEB /* HomeController.swift in Sources */,
 				845890852EB0A608009228B3 /* SceneDelegate.swift in Sources */,
+				84A2B68E2EB1AF9E00C052A2 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 100;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Gesture Snap IOS/Info.plist";
+				INFOPLIST_FILE = "Gesture Snap IOS/App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Snap By Gesture";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -395,7 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 100;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Gesture Snap IOS/Info.plist";
+				INFOPLIST_FILE = "Gesture Snap IOS/App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Snap By Gesture";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
