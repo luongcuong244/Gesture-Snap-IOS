@@ -11,6 +11,7 @@ class SplashController: BaseViewController {
     
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var adsText: UILabel!
+    @IBOutlet weak var loadingText: UILabel!
     
     var timer: Timer?
     
@@ -25,6 +26,7 @@ class SplashController: BaseViewController {
     override func setupDefaultAppearance() {
         progressBar.progress = 0.0
         adsText.applyPoppins(style: .bold, size: 14.0)
+        loadingText.applyPoppins(style: .semibold, size: 14.0)
     }
     
     func handleProgress() {
@@ -40,6 +42,7 @@ class SplashController: BaseViewController {
             if (currentTick <= totalTicks) {
                 self.progressBar.setProgress(progressValue, animated: true)
                 let percentage = Int(progressValue * 100)
+                self.loadingText.text = L10n.loadingD(percentage)
             } else {
                 self.startNextScreen()
             }

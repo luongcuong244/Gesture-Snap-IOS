@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15ADC9442EB3B850007D0349 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15ADC9462EB3B850007D0349 /* Localizable.strings */; };
+		15ADC94A2EB3C26C007D0349 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ADC9492EB3C26C007D0349 /* Strings+Generated.swift */; };
 		84271EE92EB074B900EF8DEB /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84271EE82EB074B900EF8DEB /* HomeController.swift */; };
 		84271EEC2EB074B900EF8DEB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 84271EEB2EB074B900EF8DEB /* Base */; };
 		84271EEE2EB074BA00EF8DEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84271EED2EB074BA00EF8DEB /* Assets.xcassets */; };
@@ -24,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15ADC9452EB3B850007D0349 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		15ADC9472EB3B854007D0349 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		15ADC9492EB3C26C007D0349 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Strings+Generated.swift"; path = "Generated/Strings+Generated.swift"; sourceTree = "<group>"; };
 		84271EE12EB074B900EF8DEB /* Gesture Snap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gesture Snap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84271EE82EB074B900EF8DEB /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		84271EEB2EB074B900EF8DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -53,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15ADC94C2EB3C29D007D0349 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				15ADC9492EB3C26C007D0349 /* Strings+Generated.swift */,
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
 		84271ED82EB074B900EF8DEB = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +85,7 @@
 		84271EE32EB074B900EF8DEB /* Gesture Snap */ = {
 			isa = PBXGroup;
 			children = (
+				15ADC94C2EB3C29D007D0349 /* Generated */,
 				84A2B68F2EB1AFAA00C052A2 /* App */,
 				84A2B68C2EB1AF9100C052A2 /* Core */,
 				8458908A2EB0A774009228B3 /* Resources */,
@@ -114,6 +128,7 @@
 				8478B4C32EB0B96D00E8D64E /* Fonts */,
 				84271EED2EB074BA00EF8DEB /* Assets.xcassets */,
 				84271EEF2EB074BA00EF8DEB /* LaunchScreen.storyboard */,
+				15ADC9462EB3B850007D0349 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -166,6 +181,7 @@
 				84271EDD2EB074B900EF8DEB /* Sources */,
 				84271EDE2EB074B900EF8DEB /* Frameworks */,
 				84271EDF2EB074B900EF8DEB /* Resources */,
+				15ADC9482EB3C168007D0349 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -198,6 +214,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 84271ED82EB074B900EF8DEB;
 			productRefGroup = 84271EE22EB074B900EF8DEB /* Products */;
@@ -218,6 +235,7 @@
 				8478B4D22EB0C82200E8D64E /* Poppins-Medium.ttf in Resources */,
 				84271EEE2EB074BA00EF8DEB /* Assets.xcassets in Resources */,
 				84271EF12EB074BA00EF8DEB /* Base in Resources */,
+				15ADC9442EB3B850007D0349 /* Localizable.strings in Resources */,
 				84271EEC2EB074B900EF8DEB /* Base in Resources */,
 				8458908D2EB0B4A1009228B3 /* Splash.storyboard in Resources */,
 				8478B4D32EB0C82200E8D64E /* Poppins-SemiBold.ttf in Resources */,
@@ -226,6 +244,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15ADC9482EB3C168007D0349 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed! Install it with 'brew install swiftgen'\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84271EDD2EB074B900EF8DEB /* Sources */ = {
@@ -236,6 +274,7 @@
 				84A2B6892EB1A96D00C052A2 /* SplashController.swift in Sources */,
 				845890862EB0A608009228B3 /* AppDelegate.swift in Sources */,
 				84271EE92EB074B900EF8DEB /* HomeController.swift in Sources */,
+				15ADC94A2EB3C26C007D0349 /* Strings+Generated.swift in Sources */,
 				845890852EB0A608009228B3 /* SceneDelegate.swift in Sources */,
 				84A2B68E2EB1AF9E00C052A2 /* BaseViewController.swift in Sources */,
 			);
@@ -244,6 +283,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		15ADC9462EB3B850007D0349 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15ADC9452EB3B850007D0349 /* en */,
+				15ADC9472EB3B854007D0349 /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		84271EEA2EB074B900EF8DEB /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -268,6 +316,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -331,6 +380,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -397,6 +447,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,6 +480,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,25 +20,34 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This action may contain advertising" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9K-9E-cMj">
-                                <rect key="frame" x="16" y="855.66666666666663" width="398" height="22.333333333333371"/>
+                                <rect key="frame" x="16" y="857.66666666666663" width="398" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="T7F-jF-hMJ">
-                                <rect key="frame" x="70" y="835.66666666666663" width="290" height="4"/>
+                                <rect key="frame" x="70" y="837.66666666666663" width="290" height="4"/>
                                 <color key="progressTintColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" red="0.3411764705882353" green="0.36078431372549019" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WD2-Nl-vbU">
+                                <rect key="frame" x="16" y="797.33333333333337" width="398" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="r9K-9E-cMj" firstAttribute="top" secondItem="T7F-jF-hMJ" secondAttribute="bottom" constant="16" id="0A1-YV-FyI"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="T7F-jF-hMJ" secondAttribute="trailing" constant="70" id="6Ir-rK-a7f"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WD2-Nl-vbU" secondAttribute="trailing" constant="16" id="6sD-oh-kCE"/>
                             <constraint firstItem="03Q-G7-ZbB" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="9wj-yg-Mb7"/>
                             <constraint firstItem="r9K-9E-cMj" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="16" id="FHE-A2-d64"/>
                             <constraint firstItem="03Q-G7-ZbB" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="OCY-7M-QYe"/>
+                            <constraint firstItem="WD2-Nl-vbU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="OcN-tb-RwL"/>
+                            <constraint firstItem="T7F-jF-hMJ" firstAttribute="top" secondItem="WD2-Nl-vbU" secondAttribute="bottom" constant="20" id="RV7-u8-adA"/>
                             <constraint firstItem="r9K-9E-cMj" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-20" id="Trl-z5-V90"/>
                             <constraint firstAttribute="trailing" secondItem="r9K-9E-cMj" secondAttribute="trailing" constant="16" id="VRn-Jg-w7U"/>
                             <constraint firstAttribute="bottom" secondItem="03Q-G7-ZbB" secondAttribute="bottom" id="Xbc-jG-W6f"/>
@@ -48,6 +57,7 @@
                     </view>
                     <connections>
                         <outlet property="adsText" destination="r9K-9E-cMj" id="9So-Re-fkg"/>
+                        <outlet property="loadingText" destination="WD2-Nl-vbU" id="bMD-14-6Uc"/>
                         <outlet property="progressBar" destination="T7F-jF-hMJ" id="jpr-Jf-h5m"/>
                     </connections>
                 </viewController>

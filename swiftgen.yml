@@ -1,0 +1,7 @@
+# swiftgen.yml
+strings:
+  inputs:
+    - "Gesture Snap IOS/Resources/en.lproj/Localizable.strings"
+  outputs:
+    templateName: structured-swift5
+    output: "Gesture Snap IOS/Generated/Strings+Generated.swift"
