@@ -1,0 +1,90 @@
+# =========================
+# Xcode & macOS
+# =========================
+
+# User-specific files
+xcuserdata/
+*.xcuserstate
+
+# User interface layout
+*.xcscmblueprint
+
+# Workspace & scheme management
+*.xcworkspace
+!default.xcworkspace
+
+# Build products
+build/
+DerivedData/
+
+# Xcode Cache
+*.xccheckout
+*.moved-aside
+*.xccrashpoint
+
+# =========================
+# Swift / iOS
+# =========================
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# =========================
+# macOS System Files
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+__MACOSX/
+
+# Thumbnails
+._*
+
+# =========================
+# Misc
+# =========================
+
+# Backup & logs
+*.bak
+*.tmp
+*.log
+
+# Archives
+*.zip
+*.tar
+*.gz
+
+# =========================
+# Environment & secrets
+# =========================
+
+.env
+*.key
+*.p12
+*.mobileprovision
+
+# =========================
+# Optional: Ignore Xcode project user settings
+# =========================
+
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+project.xcworkspace/xcuserdata/
