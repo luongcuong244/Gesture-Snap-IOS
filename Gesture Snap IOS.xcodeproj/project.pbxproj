@@ -15,11 +15,15 @@
 		84271EF12EB074BA00EF8DEB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 84271EF02EB074BA00EF8DEB /* Base */; };
 		845890852EB0A608009228B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845890822EB0A608009228B3 /* SceneDelegate.swift */; };
 		845890862EB0A608009228B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845890832EB0A608009228B3 /* AppDelegate.swift */; };
-		8458908D2EB0B4A1009228B3 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8458908C2EB0B4A1009228B3 /* Splash.storyboard */; };
 		8478B4CD2EB0C6F700E8D64E /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8478B4CC2EB0C6F700E8D64E /* Poppins-Bold.ttf */; };
 		8478B4D12EB0C82200E8D64E /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8478B4CE2EB0C82200E8D64E /* Poppins-Regular.ttf */; };
 		8478B4D22EB0C82200E8D64E /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8478B4CF2EB0C82200E8D64E /* Poppins-Medium.ttf */; };
 		8478B4D32EB0C82200E8D64E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8478B4D02EB0C82200E8D64E /* Poppins-SemiBold.ttf */; };
+		84A0199D2EB49AC9004FD170 /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0199C2EB49AC9004FD170 /* LogUtils.swift */; };
+		84A019A02EB49FF4004FD170 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A0199F2EB49FF4004FD170 /* Splash.storyboard */; };
+		84A019A82EB4A827004FD170 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A019A72EB4A827004FD170 /* CustomImageView.swift */; };
+		84A019AA2EB4AF03004FD170 /* Fugazone-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84A019A92EB4AF03004FD170 /* Fugazone-Regular.ttf */; };
+		84A019AD2EB4B862004FD170 /* LanguageFirstOpen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A019AC2EB4B862004FD170 /* LanguageFirstOpen.storyboard */; };
 		84A2B6892EB1A96D00C052A2 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2B6882EB1A96D00C052A2 /* SplashController.swift */; };
 		84A2B68B2EB1AA1A00C052A2 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2B68A2EB1AA1A00C052A2 /* FontExtension.swift */; };
 		84A2B68E2EB1AF9E00C052A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2B68D2EB1AF9E00C052A2 /* BaseViewController.swift */; };
@@ -37,11 +41,15 @@
 		845890822EB0A608009228B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		845890832EB0A608009228B3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845890842EB0A608009228B3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8458908C2EB0B4A1009228B3 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		8478B4CC2EB0C6F700E8D64E /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		8478B4CE2EB0C82200E8D64E /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		8478B4CF2EB0C82200E8D64E /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		8478B4D02EB0C82200E8D64E /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		84A0199C2EB49AC9004FD170 /* LogUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
+		84A0199E2EB49FF4004FD170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Splash.storyboard; sourceTree = "<group>"; };
+		84A019A72EB4A827004FD170 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		84A019A92EB4AF03004FD170 /* Fugazone-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fugazone-Regular.ttf"; sourceTree = "<group>"; };
+		84A019AC2EB4B862004FD170 /* LanguageFirstOpen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguageFirstOpen.storyboard; sourceTree = "<group>"; };
 		84A2B6882EB1A96D00C052A2 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		84A2B68A2EB1AA1A00C052A2 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		84A2B68D2EB1AF9E00C052A2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +93,7 @@
 		84271EE32EB074B900EF8DEB /* Gesture Snap */ = {
 			isa = PBXGroup;
 			children = (
+				84A019A62EB4A819004FD170 /* CustomView */,
 				15ADC94C2EB3C29D007D0349 /* Generated */,
 				84A2B68F2EB1AFAA00C052A2 /* App */,
 				84A2B68C2EB1AF9100C052A2 /* Core */,
@@ -99,6 +108,7 @@
 		8458907E2EB0A2AC009228B3 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				84A019AB2EB4B83A004FD170 /* LanguageFirstOpen */,
 				8458908B2EB0B448009228B3 /* Splash */,
 				845890812EB0A3C0009228B3 /* Home */,
 			);
@@ -118,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				84A2B68A2EB1AA1A00C052A2 /* FontExtension.swift */,
+				84A0199C2EB49AC9004FD170 /* LogUtils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -136,7 +147,7 @@
 		8458908B2EB0B448009228B3 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				8458908C2EB0B4A1009228B3 /* Splash.storyboard */,
+				84A0199F2EB49FF4004FD170 /* Splash.storyboard */,
 				84A2B6882EB1A96D00C052A2 /* SplashController.swift */,
 			);
 			path = Splash;
@@ -145,12 +156,29 @@
 		8478B4C32EB0B96D00E8D64E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				84A019A92EB4AF03004FD170 /* Fugazone-Regular.ttf */,
 				8478B4CF2EB0C82200E8D64E /* Poppins-Medium.ttf */,
 				8478B4CE2EB0C82200E8D64E /* Poppins-Regular.ttf */,
 				8478B4D02EB0C82200E8D64E /* Poppins-SemiBold.ttf */,
 				8478B4CC2EB0C6F700E8D64E /* Poppins-Bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		84A019A62EB4A819004FD170 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				84A019A72EB4A827004FD170 /* CustomImageView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		84A019AB2EB4B83A004FD170 /* LanguageFirstOpen */ = {
+			isa = PBXGroup;
+			children = (
+				84A019AC2EB4B862004FD170 /* LanguageFirstOpen.storyboard */,
+			);
+			path = LanguageFirstOpen;
 			sourceTree = "<group>";
 		};
 		84A2B68C2EB1AF9100C052A2 /* Core */ = {
@@ -231,13 +259,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A019AD2EB4B862004FD170 /* LanguageFirstOpen.storyboard in Resources */,
 				8478B4CD2EB0C6F700E8D64E /* Poppins-Bold.ttf in Resources */,
 				8478B4D22EB0C82200E8D64E /* Poppins-Medium.ttf in Resources */,
 				84271EEE2EB074BA00EF8DEB /* Assets.xcassets in Resources */,
 				84271EF12EB074BA00EF8DEB /* Base in Resources */,
 				15ADC9442EB3B850007D0349 /* Localizable.strings in Resources */,
 				84271EEC2EB074B900EF8DEB /* Base in Resources */,
-				8458908D2EB0B4A1009228B3 /* Splash.storyboard in Resources */,
+				84A019AA2EB4AF03004FD170 /* Fugazone-Regular.ttf in Resources */,
+				84A019A02EB49FF4004FD170 /* Splash.storyboard in Resources */,
 				8478B4D32EB0C82200E8D64E /* Poppins-SemiBold.ttf in Resources */,
 				8478B4D12EB0C82200E8D64E /* Poppins-Regular.ttf in Resources */,
 			);
@@ -270,10 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A019A82EB4A827004FD170 /* CustomImageView.swift in Sources */,
 				84A2B68B2EB1AA1A00C052A2 /* FontExtension.swift in Sources */,
 				84A2B6892EB1A96D00C052A2 /* SplashController.swift in Sources */,
 				845890862EB0A608009228B3 /* AppDelegate.swift in Sources */,
 				84271EE92EB074B900EF8DEB /* HomeController.swift in Sources */,
+				84A0199D2EB49AC9004FD170 /* LogUtils.swift in Sources */,
 				15ADC94A2EB3C26C007D0349 /* Strings+Generated.swift in Sources */,
 				845890852EB0A608009228B3 /* SceneDelegate.swift in Sources */,
 				84A2B68E2EB1AF9E00C052A2 /* BaseViewController.swift in Sources */,
@@ -306,6 +338,14 @@
 				84271EF02EB074BA00EF8DEB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84A0199F2EB49FF4004FD170 /* Splash.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A0199E2EB49FF4004FD170 /* Base */,
+			);
+			name = Splash.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

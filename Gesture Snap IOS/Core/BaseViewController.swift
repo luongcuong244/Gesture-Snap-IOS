@@ -17,13 +17,17 @@ class BaseViewController: UIViewController {
     func setupDefaultAppearance() {
         fatalError("Must override setupDefaultAppearance() in subclass")
     }
-    
+
     func changeRootViewController(to viewController: UIViewController, duration: TimeInterval = 0.3) {
-        guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else { return }
-        window.rootViewController = viewController
+        guard let window = Self.getKeyWindow() else { return }
         
+        window.rootViewController = viewController
         UIView.transition(
-            with: window, duration: duration, options: .transitionCrossDissolve, animations: nil, completion: nil
+            with: window,
+            duration: duration,
+            options: .transitionCrossDissolve,
+            animations: nil,
+            completion: nil
         )
     }
     
@@ -31,16 +35,29 @@ class BaseViewController: UIViewController {
         let storyboard = UIStoryboard(name: storyboardName, bundle: bundle)
         
         let nextVC: UIViewController
-        
         if let id = viewControllerID {
             nextVC = storyboard.instantiateViewController(withIdentifier: id)
         } else {
             guard let initialVC = storyboard.instantiateInitialViewController() else {
-                fatalError("No Initial View Controller for '\(storyboardName)' Storybard.")
+                fatalError("No Initial View Controller for '\(storyboardName)' Storyboard.")
             }
             nextVC = initialVC
         }
         
         changeRootViewController(to: nextVC)
+    }
+    
+    private static func getKeyWindow() -> UIWindow? {
+        // iOS 15+ cách mới
+        if #available(iOS 15.0, *) {
+            return UIApplication.shared
+                .connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .flatMap { $0.windows }
+                .first(where: { $0.isKeyWindow })
+        } else {
+            // iOS cũ hơn
+            return UIApplication.shared.windows.first(where: { $0.isKeyWindow })
+        }
     }
 }

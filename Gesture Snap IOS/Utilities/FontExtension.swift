@@ -23,6 +23,15 @@ extension UILabel {
             print("Error: Could not find font named \(fontName)")
         }
     }
+    
+    func applyFugazone(size: CGFloat) {
+        let fontName = "Fugazone-Regular"
+        if let customFont = UIFont(name: fontName, size: size.scaledFontSize) {
+            self.font = customFont
+        } else {
+            print("Error: Could not find font named \(fontName)")
+        }
+    }
 }
 
 extension CGFloat {

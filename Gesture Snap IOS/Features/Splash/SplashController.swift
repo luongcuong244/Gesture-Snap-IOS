@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import os
 
 class SplashController: BaseViewController {
     
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var adsText: UILabel!
     @IBOutlet weak var loadingText: UILabel!
+    @IBOutlet weak var appNameText: UILabel!
     
     var timer: Timer?
     
@@ -27,6 +29,7 @@ class SplashController: BaseViewController {
         progressBar.progress = 0.0
         adsText.applyPoppins(style: .bold, size: 14.0)
         loadingText.applyPoppins(style: .semibold, size: 14.0)
+        appNameText.applyFugazone(size: 32.0)
     }
     
     func handleProgress() {
